@@ -1,0 +1,31 @@
+.food-display {
+    margin-top: 40px;
+}
+
+.food-display h2 {
+    font-size: max(2vw, 24px);
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.food-display h2::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+}
+
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    margin-top: 35px;
+    gap: 30px;
+    row-gap: 40px;
+}

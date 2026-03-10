@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --primary-color: #FF6B35;
+  --primary-gradient: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
+  --bg-color: #FFF8F0;
+  --card-bg: #FFFFFF;
+  --text-main: #2D2D2D;
+  --text-muted: #666666;
+  --border-color: #F0E2D3;
+  --shadow-soft: 0 4px 20px rgba(255, 107, 53, 0.08);
+  --shadow-elevated: 0 10px 30px rgba(255, 107, 53, 0.12);
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EEDDCC;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-base);
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: var(--border-color);
+  margin: 10px 0;
+}
+
+.app-content {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cursor {
+  cursor: pointer;
+}
